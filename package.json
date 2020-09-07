@@ -1,0 +1,24 @@
+{
+  "name": "good_readme_generator",
+  "version": "1.0.0",
+  "description": "dependencies for readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cperez525/good_readme_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cperez525/good_readme_generator/issues"
+  },
+  "homepage": "https://github.com/cperez525/good_readme_generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.3",
+    "util": "^0.12.3"
+  }
+}
