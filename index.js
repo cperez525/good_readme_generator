@@ -35,6 +35,12 @@ function readmeSetup() {
       type: "input",
       name: "tests",
       message: "Provide any test instructions here."
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "Which license do you prefer for this project?",
+      choices: ""
     }
   ]);
 }
@@ -48,7 +54,7 @@ async function init() {
   try {
     const answers = await readmeSetup();
 
-    const html = generateREADME(answers);
+    const md = generateREADME(answers);
 
     await asyncWriteFile("projectREADME.md", md);
 
