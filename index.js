@@ -86,7 +86,7 @@ function generateREADME(answers) {
 
   ## Questions
   You can reach me through one of the following contacts -  
-  Github contact: github.com/${answers.github}  
+  Github contact: https://github.com/${answers.github}  
   Email: ${answers.email}
 `;
 }
