@@ -51,11 +51,11 @@ function generateREADME(answers) {
   ${answers.description}
 
   ## Table of Contents
-  *[Instructions](#instructions)
-  *[Usage](#usage)
-  *[Contributing](#contributing)
-  *[Tests](#tests)
-  *[License](#license)
+  [Instructions](#instructions)  
+  [Usage](#usage)  
+  [Contributing](#contributing)  
+  [Tests](#tests)  
+  [License](#license)
 
   ## Instructions
   ${answers.instructions}
