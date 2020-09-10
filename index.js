@@ -43,7 +43,7 @@ function readmeSetup() {
       type: "list",
       name: "license",
       message: "Which license do you prefer for this project?",
-      choices: ["GNUAGPLv3", "GNUGPLv3", "MozillaPublicLicense2.0", "ApacheLicense2.0", "MITLicense", "BoostSoftwareLicense1.0", "TheUnlicense"]
+      choices: ["GNUAGPLv3", "GNUGPLv3", "MozillaPublicLicense2.0", "ApacheLicense2.0", "MITLicense", "BoostSoftwareLicense1.0", "TheUnlicense", "None"]
     },
     {
       tpye: "input",
