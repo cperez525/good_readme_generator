@@ -40,22 +40,22 @@ function readmeSetup() {
       type: "list",
       name: "license",
       message: "Which license do you prefer for this project?",
-      choices: ["GNU AGPLv3", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
+      choices: ["GNUAGPLv3", "GNUGPLv3", "MozillaPublicLicense2.0", "ApacheLicense2.0", "MITLicense", "BoostSoftwareLicense1.0", "TheUnlicense"]
     }
   ]);
 }
 
 function generateREADME(answers) {
   return `
-  # ${answers.title} [![Github](https://img.shields.io/badge/License-${answers.license}-brightgreen)]
+  # ${answers.title} ![license badge](https://img.shields.io/static/v1?label=license&message=${answers.license}&color=red)
   ${answers.description}
 
   ## Table of Contents
-  [Instructions](#instructions)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [License](#license)
+  *[Instructions](#instructions)
+  *[Usage](#usage)
+  *[Contributing](#contributing)
+  *[Tests](#tests)
+  *[License](#license)
 
   ## Instructions
   ${answers.instructions}
