@@ -50,7 +50,7 @@ function generateREADME(answers) {
 `;
 }
 
-async function init() {
+async function initialize() {
   try {
     const answers = await readmeSetup();
 
@@ -64,4 +64,4 @@ async function init() {
   }
 }
 
-init();
+initialize();
