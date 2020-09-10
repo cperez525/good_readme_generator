@@ -102,7 +102,7 @@ async function initialize() {
 
     const md = generateREADME(answers);
 
-    await asyncWriteFile(answers.title + "README.md", md);
+    await asyncWriteFile("README.md", md);
 
     console.log("Successfully wrote to README.md");
   } catch(err) {
