@@ -11,7 +11,7 @@
   [Questions](#questions)
 
   ## Instructions
-  Upon copying this repository to your local system storage, use the terminal to navigate to the file's location in your system storage, and then run the "npm install" command to install the dependencies necessary to run this application.
+  You must have node.js installed to use this application. Upon copying this repository to your local system storage, use the terminal to navigate to the file's location in your system storage, and then run the "npm install" command to install the dependencies necessary to run this application.
 
   ## Usage
   ![node command screenshot](images/node_command.JPG) After navigating to the folder's location in your system storage, enter the "node index.js" command in your terminal to begin running the application. Once you have done this, please respond to the prompts appropriately. After you have answered all prompts, a README file will be created. Please refer to the following gifs as examples of the use of this application:  
