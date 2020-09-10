@@ -41,7 +41,18 @@ function readmeSetup() {
       name: "license",
       message: "Which license do you prefer for this project?",
       choices: ["GNUAGPLv3", "GNUGPLv3", "MozillaPublicLicense2.0", "ApacheLicense2.0", "MITLicense", "BoostSoftwareLicense1.0", "TheUnlicense"]
+    },
+    {
+      tpye: "input",
+      name: "github",
+      message: "What is your Github username?"
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?"
     }
+
   ]);
 }
 
@@ -55,7 +66,8 @@ function generateREADME(answers) {
   [Usage](#usage)  
   [Contributing](#contributing)  
   [Tests](#tests)  
-  [License](#license)
+  [License](#license)  
+  [Questions](#questions)
 
   ## Instructions
   ${answers.instructions}
@@ -71,6 +83,11 @@ function generateREADME(answers) {
 
   ## License
   ${answers.license}
+
+  ## Questions
+  You can reach me through one of the following contacts -  
+  Github contact: github.com/${answers.github}  
+  Email: ${answers.email}
 `;
 }
 
