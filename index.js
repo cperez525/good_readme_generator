@@ -1,9 +1,12 @@
+// pulling in dependencies
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
+// promisifying writeFile 
 const asyncWriteFile = util.promisify(fs.writeFile);
 
+// Set up function displaying prompts for user to enter information and choose license
 function readmeSetup() {
   return inquirer.prompt([
     {
@@ -56,6 +59,7 @@ function readmeSetup() {
   ]);
 }
 
+// function providing the README format
 function generateREADME(answers) {
   return `
   # ${answers.title} ![license badge](https://img.shields.io/static/v1?label=license&message=${answers.license}&color=red)
@@ -91,6 +95,7 @@ function generateREADME(answers) {
 `;
 }
 
+// handling asyncronous functions, waiting for answers, then generating the readme with the desired formatting
 async function initialize() {
   try {
     const answers = await readmeSetup();
@@ -99,10 +104,11 @@ async function initialize() {
 
     await asyncWriteFile(answers.title + "README.md", md);
 
-    console.log("Successfully wrote to projectREADME.md");
+    console.log("Successfully wrote to" + anwsers.title + "README.md");
   } catch(err) {
     console.log(err);
   }
 }
 
+// calling the initialize function upon start of the application
 initialize();
