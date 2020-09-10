@@ -104,7 +104,7 @@ async function initialize() {
 
     await asyncWriteFile(answers.title + "README.md", md);
 
-    console.log("Successfully wrote to" + anwsers.title + "README.md");
+    console.log("Successfully wrote to" + anwsers.title + ".md");
   } catch(err) {
     console.log(err);
   }
