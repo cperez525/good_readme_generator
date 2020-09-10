@@ -40,13 +40,34 @@ function readmeSetup() {
       type: "list",
       name: "license",
       message: "Which license do you prefer for this project?",
-      choices: ""
+      choices: ["none", "second to none"]
     }
   ]);
 }
 
 function generateREADME(answers) {
   return `
+  # ${answers.title}
+
+  ## ${answers.description}
+
+  ## Table of Contents
+
+
+  ## Instructions
+  ${answers.instructions}
+
+  ## Usage
+  ${answers.usage}
+
+  ## Contributing
+  ${answers.contributing}
+
+  ## Tests
+  ${answers.tests}
+
+  ## License
+  ${answers.license}
 `;
 }
 
