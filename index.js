@@ -40,19 +40,22 @@ function readmeSetup() {
       type: "list",
       name: "license",
       message: "Which license do you prefer for this project?",
-      choices: ["none", "second to none"]
+      choices: ["GNU AGPLv3", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
     }
   ]);
 }
 
 function generateREADME(answers) {
   return `
-  # ${answers.title}
-
-  ## ${answers.description}
+  # ${answers.title} [![Github](https://img.shields.io/badge/License-${answers.license}-brightgreen)]
+  ${answers.description}
 
   ## Table of Contents
-
+  [Instructions](#instructions)
+  [Usage](#usage)
+  [Contributing](#contributing)
+  [Tests](#tests)
+  [License](#license)
 
   ## Instructions
   ${answers.instructions}
@@ -77,7 +80,7 @@ async function initialize() {
 
     const md = generateREADME(answers);
 
-    await asyncWriteFile("projectREADME.md", md);
+    await asyncWriteFile(answers.title + "README.md", md);
 
     console.log("Successfully wrote to projectREADME.md");
   } catch(err) {
