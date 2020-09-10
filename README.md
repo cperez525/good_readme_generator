@@ -14,7 +14,8 @@
   Upon copying this repository to your local system storage, use the terminal to navigate to the file's location in your system storage, and then run the "npm install" command to install the dependencies necessary to run this application.
 
   ## Usage
-  ![node command screenshot](images/node_command.JPG) After navigating to the folder's location in your system storage, enter the "node index.js" command in your terminal to begin running the application. Once you have done this, please respond to the prompts appropriately. After you have answered all prompts, a README file will be created. Please refer to the following gifs as examples of the use of this application: ![backend video](images/create_example.gif)  ![result video](images/result_example.gif)
+  ![node command screenshot](images/node_command.JPG) After navigating to the folder's location in your system storage, enter the "node index.js" command in your terminal to begin running the application. Once you have done this, please respond to the prompts appropriately. After you have answered all prompts, a README file will be created. Please refer to the following gifs as examples of the use of this application:  
+  ![backend video](images/create_example.gif)  ![result video](images/result_example.gif)
 
   ## Contributing
   If you have any recommendations or suggestions for this application, please email me at cristino.perez525@gmail.com
